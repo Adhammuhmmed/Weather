@@ -1,0 +1,130 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.my-nav {
+  background-color: transparent !important;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.my-nav .logo {
+    cursor: pointer;
+}
+.my-nav .nav-item .nav-link {
+  transition: color 0.5s;
+  font-weight: 600;
+}
+.my-nav .nav-item .nav-link:hover {
+  color: #4584c5 !important;
+}
+.form-control {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0;
+  background-color: transparent !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0 transparent;
+  border-bottom: 1px solid #dee2e6 !important;
+  border-color: transparent;
+}
+.btn {
+  background-color: #4584c5;
+  padding: 0 50px;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #4584c5 !important;
+  color: #fff !important;
+}
+.header .row .day {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.151) 0% 100%),
+    url(../Images/sky.avif);
+  background-position: center;
+  background-size: cover;
+}
+.header .row .item .date p,
+.header .row .item .more-info {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.header .row .item .weather-info .city {
+  font-size: 1.25rem;
+}
+.header .row .item .weather-info h1 {
+  font-size: 4.0625rem;
+}
+/* Loader */
+
+.loader-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #4584c5;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.item .temp p {
+  font-size: 25px;
+}
+.footer {
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.footer .social-links div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer .social-links i {
+  transition: color 0.25s;
+  font-size: 20px;
+}
+.footer .social-links .facebook:hover i {
+  color: #1877f2;
+}
+.footer .social-links .twitter:hover i {
+  color: #1da1f2;
+}
+.footer .social-links .google:hover i {
+  color: #ea4335;
+}
+.footer .social-links .pinterest:hover i {
+  color: #e60023;
+}
